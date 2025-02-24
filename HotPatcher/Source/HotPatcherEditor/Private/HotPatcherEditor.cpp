@@ -184,7 +184,7 @@ void FHotPatcherEditorModule::PluginButtonClicked(const FSHotPatcherContext& Con
 		.SetDisplayName(LOCTEXT("FHotPatcherTabTitle", "HotPatcher"))
 		.SetMenuType(ETabSpawnerMenuType::Hidden);
 	}
-	FGlobalTabmanager::Get()->InvokeTab(HotPatcherTabName);
+	FGlobalTabmanager::Get()->TryInvokeTab(HotPatcherTabName);
 }
 
 void FHotPatcherEditorModule::OnTabClosed(TSharedRef<SDockTab> InTab)
